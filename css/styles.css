@@ -1,0 +1,46 @@
+/* Variables*/
+:root {
+    /* Primary Colors */
+    --blue-950: hsl(233, 26%, 24%);
+    --green-500: hsl(136, 64%, 51%);
+    --cyan-400: hsl(192, 69%, 51%);
+    
+    /* Neutral Colors */
+    --gray-600: hsl(233, 8%, 62%);
+    --gray-100: hsl(220, 16%, 96%);
+    --gray-50: hsl(0, 0%, 98%);
+    --white: hsl(0, 100%, 100%);
+
+    /* Gradient Colors */
+    --gradient-1: linear-gradient(217deg, #33D35E 8.35%, #2AB6D9 97.75%);
+    --gradient-2: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.00) 100%);
+    
+    /* Font sizes */
+    --font-body-1: 1.125rem; /* 18px */
+    --h1-font: 3.5rem; 
+    --h2-font: 2.5rem;
+    --h3-font: 2rem;
+    --h4-font: 24px;
+    --font-body-2: 1rem;   /* 16px */
+    --font-body-3: .875rem;  /* 14px */
+    --font-body-4: .625rem; /* 10px */
+
+
+
+
+
+
+
+
+
+    /* Attribution */
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+}
