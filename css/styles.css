@@ -11,19 +11,15 @@
 	--gray-50: hsl(0, 0%, 98%);
 	--white: hsl(0, 100%, 100%);
 
-	/* Gradient Colors */
-	--gradient-1: linear-gradient(217deg, #33d35e 8.35%, #2ab6d9 97.75%);
-	--gradient-2: linear-gradient(180deg, #2d314d 0%, rgba(45, 49, 77, 0) 100%);
-
 	/* Font sizes */
-	--fs-h1: 3.5rem;
-	--fs-h2: 2.5rem;
-	--fs-h3: 2rem;
-	--fs-h4: 1.5rem;
-	--fs-body-1: 1.125rem; /* 18px */
-	--fs-body-2: 1rem; /* 16px */
-	--fs-body-3: 0.875rem; /* 14px */
-	--fs-body-4: 0.625rem; /* 10px */
+	--fs-h1: 56px;
+	--fs-h2: 40px;
+	--fs-h3: 32px;
+	--fs-h4: 24px;
+	--fs-body-1: 18px; /* 1.125rem */
+	--fs-body-2: 16px; /* 1rem */
+	--fs-body-3: 14px; /* .875rem */
+	--fs-body-4: 10px; /* .625rem */
 
 	/* Font Families */
 	--ff-serif: 'Public Sans', sans-serif;
@@ -33,7 +29,7 @@
 	*::before,
 	*::after {
 		box-sizing: border-box;
-		outline: 1px solid black;
+		outline: 0.0625rem solid black;
 	}
 
 	body,
@@ -104,30 +100,30 @@
 	/* Utility Classes */
 	.flex {
 		display: flex;
-		gap: var(--gap, 1rem);
+		gap: var(--gap, 16px);
 	}
-    .flex-row {
-        flex-direction: row;
-    }
+	.flex-row {
+		flex-direction: row;
+	}
 
-    .flex-column {
-        flex-direction: column;
-    }
-    .flex-jc-ctr {
-        justify-content: center;
-    }
+	.flex-column {
+		flex-direction: column;
+	}
+	.flex-jc-ctr {
+		justify-content: center;
+	}
 
-    .flex-ai-ctr {
-        align-items: center;
-    }
+	.flex-ai-ctr {
+		align-items: center;
+	}
 
-    .flex-jc-sbtw {
-        justify-content: space-between;
-    }
+	.flex-jc-sbtw {
+		justify-content: space-between;
+	}
 
 	.grid {
 		display: grid;
-		gap: var(--gap, 1rem);
+		gap: var(--gap, 16px);
 	}
 
 	.d-block {
@@ -137,12 +133,37 @@
 	.container {
 		padding-inline: 2em;
 		margin-inline: auto;
-		max-width: 80rem;
+		max-width: 1280px;
 	}
+
+	/* Button Styles */
+	.button {
+		display: inline-block;
+		padding: 14px 36px;
+		background: linear-gradient(to right, var(--green-500), var(--cyan-400));
+		border-radius: 3.125rem;
+		border: none;
+		color: var(--white);
+		font-weight: 700;
+		cursor: pointer;
+		transition: opacity 0.3s ease;
+	}
+
+    .button:hover {
+        opacity: 0.7;
+    }
+
+	/* Header */
+
+	.header__btn {
+		display: none;
+	}
+
+	/* Footer */
 
 	/* Attribution */
 	.attribution {
-		font-size: 11px;
+		font-size: 0.6875rem;
 		text-align: center;
 	}
 
