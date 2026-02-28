@@ -10,6 +10,7 @@
 	--gray-100: hsl(220, 16%, 96%);
 	--gray-50: hsl(0, 0%, 98%);
 	--white: hsl(0, 100%, 100%);
+    --menu-gradient: rgba(45, 49, 77, 0.8);
 
 	/* Font sizes */
 	--fs-h1: 56px;
@@ -155,10 +156,36 @@
 
 	/* Header */
 
+    .header {
+        position: relative;
+        z-index: 1;
+        background-color: var(--white);
+    }
+
+    .header__container {
+        position: relative;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        
+    }
+
+    .header__logo {
+       with: 8.6875rem;
+       height: 1.25rem; 
+    }
+
+    .header__menu {
+        
+    }
+
+    .header__menu.active {
+        transform: translateX(0);
+    }
 	.header__btn {
 		display: none;
 	}
 
+    
 	/* Footer */
 
 	/* Attribution */
