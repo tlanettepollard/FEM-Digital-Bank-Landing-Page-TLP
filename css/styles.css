@@ -98,7 +98,13 @@
 		}
 	}
 
-	/* Utility Classes */
+
+/*-------------------*/
+/* Utility Classes   */
+/* ------------------*/
+
+/* general */
+
 	.flex {
 		display: flex;
 		gap: var(--gap, 16px);
@@ -137,7 +143,27 @@
 		max-width: 1280px;
 	}
 
-	/* Button Styles */
+	/* Colors */
+
+	.bg-dark {
+		background-color: hsl(var(--blue-950));
+	}
+
+	.bg-white {
+		background-color: hsl(var(--white));
+	}
+
+	.clr-green {
+		background-color: hsl(var(--green-500));
+	}
+
+	.clr-cyan {
+		background-color: hsl(var(--cyan-400));
+	}
+
+/*-------------------*/
+/* Components */
+/* ------------------*/
 	.button {
 		display: inline-block;
 		padding: 14px 36px;
