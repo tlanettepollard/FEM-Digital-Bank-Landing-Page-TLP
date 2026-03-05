@@ -10,7 +10,7 @@
 	--gray-100: hsl(220, 16%, 96%);
 	--gray-50: hsl(0, 0%, 98%);
 	--white: hsl(0, 100%, 100%);
-    --menu-gradient: rgba(45, 49, 77, 0.8);
+	--menu-gradient: rgba(45, 49, 77, 0.8);
 
 	/* Font sizes */
 	--fs-h1: 56px;
@@ -47,8 +47,6 @@
 	body {
 		font-family: var(--ff-serif);
 		font-size: var(--fs-body-3);
-		color: var(--gray-600);
-		background-color: var(--gray-50);
 		height: 100vh;
 		line-height: 1.5;
 		display: grid;
@@ -98,12 +96,11 @@
 		}
 	}
 
+	/*-------------------*/
+	/* Utility Classes   */
+	/* ------------------*/
 
-/*-------------------*/
-/* Utility Classes   */
-/* ------------------*/
-
-/* general */
+	/* general */
 
 	.flex {
 		display: flex;
@@ -146,24 +143,40 @@
 	/* Colors */
 
 	.bg-dark {
-		background-color: hsl(var(--blue-950));
+		background-color: var(--blue-950);
+	}
+
+	.bg-light {
+		background-color: var(--gray-100);
 	}
 
 	.bg-white {
-		background-color: hsl(var(--white));
+		background-color: var(--white);
 	}
 
 	.clr-green {
-		background-color: hsl(var(--green-500));
+		background-color: var(--green-500);
 	}
 
 	.clr-cyan {
-		background-color: hsl(var(--cyan-400));
+		background-color: var(--cyan-400);
 	}
 
-/*-------------------*/
-/* Components */
-/* ------------------*/
+	.text-dark {
+		color: var(--blue-950);
+	}
+
+	.text-gray {
+		color: var(--gray-600);
+	}
+
+	.text-white {
+		color: var(--white);
+	}
+
+	/*-------------------*/
+	/* Components */
+	/* ------------------*/
 	.button {
 		display: inline-block;
 		padding: 14px 36px;
@@ -176,42 +189,39 @@
 		transition: opacity 0.3s ease;
 	}
 
-    .button:hover {
-        opacity: 0.7;
-    }
+	.button:hover {
+		opacity: 0.7;
+	}
 
 	/* Header */
 
-    .header {
-        position: relative;
-        z-index: 1;
-        background-color: var(--white);
-    }
+	.header {
+		position: relative;
+		z-index: 1;
+		background-color: var(--white);
+	}
 
-    .header__container {
-        position: relative;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        
-    }
+	.header__container {
+		position: relative;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
 
-    .header__logo {
-       width: 8.6875rem;
-       height: 1.25rem; 
-    }
+	.header__logo {
+		width: 8.6875rem;
+		height: 1.25rem;
+	}
 
-    .header__menu {
-        
-    }
+	.header__menu {
+	}
 
-    .header__menu.active {
-        transform: translateX(0);
-    }
+	.header__menu.active {
+		transform: translateX(0);
+	}
 	.header__btn {
 		display: none;
 	}
 
-    
 	/* Footer */
 
 	/* Attribution */
