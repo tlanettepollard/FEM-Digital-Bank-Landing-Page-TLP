@@ -26,6 +26,7 @@
 	--ff-serif: 'Public Sans', sans-serif;
 
 	/* Spacing Sizes */
+	--spacing-0: 0rem; /* 0px */
 	--spacing-100: .5rem; /* 8px */
 	--spacing-200: 1rem; /* 16px */
 	--spacing-300: 1.5rem; /* 24px */
@@ -38,7 +39,7 @@
 	--spacing-1000: 5rem; /* 80px */
 	--spacing-1500: 7.5rem; /* 120px */
 
-	
+
 	/* Reset */
 	*,
 	*::before,
@@ -193,7 +194,7 @@
 	/* ------------------*/
 	.button {
 		display: inline-block;
-		padding: .875rem 2.25rem;
+		padding: var(--spacing-100) var(--spacing-400);
 		background: linear-gradient(to right, var(--green-500), var(--cyan-400));
 		border-radius: 50px;
 		border: none;
@@ -213,6 +214,7 @@
 		position: relative;
 		z-index: 1;
 		background-color: var(--white);
+		padding: var(--spacing-300);
 	}
 
 	.header__container {
